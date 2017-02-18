@@ -1,0 +1,14 @@
+com
+	CommunityMart.dbo.
+	CommunityMart.Dim.
+
+reffact
+	ReferralFact AS ref_fact
+	ref_fact
+	CommunityMart.dbo.ReferralFact AS ref_fact
+	DSDW.Community.ReferralFact AS ref_fact
+
+refdim
+	ReferralSource AS ref_src
+	ReferralType AS ref_typ
+	ReferralReason AS ref_reas

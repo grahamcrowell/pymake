@@ -1,0 +1,11 @@
+// copy pymake.sublime-build "C:\Users\user\AppData\Roaming\Sublime Text 3\Packages\User"
+{
+	"name":"default build",
+    "cmd": ["C:/Users/user/Source/Repo/pymake/run_me.bat", "$file"],
+    "variants": [
+		{ 
+			"name": "variant build",
+			"cmd": ["C:/Users/user/Source/Repo/pymake/run_me.bat", "$file", "--alt"]
+		}
+    ]
+}
