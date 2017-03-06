@@ -21,7 +21,7 @@ else:
 		pdflatex = "pdflatex"
 	powershell_ise = "c:/windows/system32/WindowsPowerShell/v1.0/PowerShell_ISE.exe"
 	powershell = "c:/windows/system32/WindowsPowerShell/v1.0/powershell.exe"
-	sql = lambda script_file: 'SQLCMD -S{} -E -dmaster -i "{}"'.format('PC',script_file)
+	sql = lambda script_file: 'SQLCMD -S{} -E -dtempdb -i "{}"'.format('PC',script_file)
 	md_html = lambda arg, dst: 'pandoc "{0}" --toc -f markdown -t html -s -o "{1}"'.format(arg,dst)
 	md_pdf = lambda arg, dst: 'pandoc -S "{0}" -o "{1}"'.format(arg,dst)
 	# sql = lambda script_file: '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" "{}" /Edit'.format(script_file)
